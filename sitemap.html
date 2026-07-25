@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sitemap | Trinity Bookkeeping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:          #1A2744;
+      --green-dark:    #243820;
+      --green-mid:     #2E5028;
+      --amber:         #C8872A;
+      --amber-light:   #E4A84A;
+      --amber-pale:    #F5E6C8;
+      --parchment:     #F8F2E4;
+      --parchment-dark:#EDE2CA;
+      --wood-dark:     #2C1F14;
+      --text-dark:     #1A1410;
+      --text-mid:      #4A3C2A;
+      --text-light:    #7A6A52;
+      --white:         #FFFFFF;
+    }
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: var(--parchment);
+      color: var(--text-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    nav {
+      background: var(--wood-dark);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--amber-pale); font-weight: 600; }
+    .nav-back { font-size: .8rem; color: var(--amber-pale); opacity: .7; letter-spacing: .05em; }
+    .nav-back:hover { opacity: 1; }
+
+    .page-header {
+      background: var(--green-dark);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .eyebrow {
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--amber);
+      display: block;
+      margin-bottom: .6rem;
+    }
+    .page-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 600;
+      color: var(--amber-pale);
+    }
+
+    main {
+      flex: 1;
+      max-width: 860px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      width: 100%;
+    }
+
+    .sitemap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    .sitemap-group {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 1.8rem;
+      border: 1px solid var(--amber-pale);
+      box-shadow: 0 2px 14px rgba(44,31,20,.08);
+    }
+    .sitemap-group h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--green-dark);
+      margin-bottom: .4rem;
+      padding-bottom: .6rem;
+      border-bottom: 2px solid var(--amber-pale);
+    }
+    .sitemap-group ul { margin-top: .8rem; display: flex; flex-direction: column; gap: .5rem; }
+    .sitemap-group ul li a {
+      font-size: .88rem;
+      color: var(--text-mid);
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      transition: color .2s;
+    }
+    .sitemap-group ul li a:hover { color: var(--amber); }
+    .sitemap-group ul li a::before {
+      content: '→';
+      color: var(--amber);
+      font-size: .75rem;
+      flex-shrink: 0;
+    }
+
+    footer {
+      background: var(--wood-dark);
+      color: var(--amber-pale);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: .78rem;
+      margin-top: 3rem;
+    }
+    footer a { color: var(--amber-pale); opacity: .7; margin: 0 .75rem; }
+    footer a:hover { opacity: 1; }
+    .footer-bottom { margin-top: .5rem; opacity: .5; font-size: .72rem; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">Trinity Bookkeeping</span>
+    <a href="https://www.trinitybookstx.com/" class="nav-back">← Back to Home</a>
+  </nav>
+
+  <div class="page-header">
+    <span class="eyebrow">Navigation</span>
+    <h1>Sitemap</h1>
+  </div>
+
+  <main>
+    <div class="sitemap-grid">
+
+      <div class="sitemap-group">
+        <h2>Main Pages</h2>
+        <ul>
+          <li><a href="https://www.trinitybookstx.com/">Home</a></li>
+          <li><a href="https://www.trinitybookstx.com/#about">About K.C.</a></li>
+          <li><a href="https://www.trinitybookstx.com/#services">Services</a></li>
+          <li><a href="https://www.trinitybookstx.com/#packages">Pricing & Packages</a></li>
+          <li><a href="https://www.trinitybookstx.com/#testimonials">Client Reviews</a></li>
+          <li><a href="https://www.trinitybookstx.com/#contact">Free Consultation</a></li>
+        </ul>
+      </div>
+
+      <div class="sitemap-group">
+        <h2>Services</h2>
+        <ul>
+          <li><a href="https://www.trinitybookstx.com/#services">Monthly Bookkeeping</a></li>
+          <li><a href="https://www.trinitybookstx.com/#services">Payroll Services</a></li>
+          <li><a href="https://www.trinitybookstx.com/#services">Bookkeeping Cleanup</a></li>
+          <li><a href="https://www.trinitybookstx.com/#services">Sales Tax Filing</a></li>
+          <li><a href="https://www.trinitybookstx.com/#services">1099 Preparation</a></li>
+          <li><a href="https://www.trinitybookstx.com/#services">Full Service Package</a></li>
+        </ul>
+      </div>
+
+      <div class="sitemap-group">
+        <h2>Get in Touch</h2>
+        <ul>
+          <li><a href="https://www.trinitybookstx.com/#contact">Schedule a Consultation</a></li>
+          <li><a href="tel:5125913169">Call: 512-591-3169</a></li>
+          <li><a href="mailto:kc@trinitybookstx.com">Email K.C.</a></li>
+        </ul>
+      </div>
+
+      <div class="sitemap-group">
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="/sitemap.xml">XML Sitemap</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="/sitemap.html">Sitemap</a>
+    </div>
+    <div class="footer-bottom">© 2026 Trinity Bookkeeping · All Rights Reserved</div>
+  </footer>
+
+</body>
+</html>
