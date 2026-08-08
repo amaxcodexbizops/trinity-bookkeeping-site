@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sitemap | Trinity Bookkeeping</title>
-  <meta name="description" content="A full list of every page on the Trinity Bookkeeping website." />
-  <meta name="robots" content="noindex, follow" />
-  <link rel="canonical" href="https://www.trinitybookstx.com/sitemap.html" />
+  <title>Payroll Services for Small Businesses | Trinity Bookkeeping</title>
+  <meta name="description" content="Reliable payroll services for Texas small businesses. Accurate, on-time payroll and compliance handled personally by K.C. Poteet, serving Liberty Hill, TX and remotely nationwide." />
+  <meta name="keywords" content="payroll service Texas, payroll service Liberty Hill, small business payroll, payroll compliance" />
+  <link rel="canonical" href="https://www.trinitybookstx.com/payroll.html" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -14,6 +14,70 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.trinitybookstx.com/payroll.html" />
+  <meta property="og:title" content="Payroll Services for Small Businesses | Trinity Bookkeeping" />
+  <meta property="og:description" content="Reliable payroll services for Texas small businesses. Accurate, on-time payroll and compliance handled personally by K.C. Poteet, serving Liberty Hill, TX and remotely nationwide." />
+  <meta property="og:image" content="https://trinitybookkeeping.netlify.app/TB%20-%20Social%20Preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Trinity Bookkeeping" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Payroll Services for Small Businesses | Trinity Bookkeeping" />
+  <meta name="twitter:description" content="Reliable payroll services for Texas small businesses. Accurate, on-time payroll and compliance handled personally by K.C. Poteet, serving Liberty Hill, TX and remotely nationwide." />
+  <meta name="twitter:image" content="https://trinitybookkeeping.netlify.app/TB%20-%20Social%20Preview.png" />
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Payroll Services",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Trinity Bookkeeping",
+    "telephone": "512-591-3169",
+    "email": "kc@trinitybookstx.com",
+    "url": "https://www.trinitybookstx.com"
+  },
+  "areaServed": [
+    "Liberty Hill, TX",
+    "Leander, TX",
+    "Georgetown, TX",
+    "Burnet, TX",
+    "Smithwick, TX",
+    "Texas",
+    "United States"
+  ],
+  "description": "Payroll processing and compliance support for Texas small businesses.",
+  "url": "https://www.trinitybookstx.com/payroll.html"
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.trinitybookstx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Payroll Services",
+      "item": "https://www.trinitybookstx.com/payroll.html"
+    }
+  ]
+}
+  </script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1131,20 +1195,18 @@
       /* Hero headline — prevent overflow on smallest phones */
       .hero-headline { font-size: clamp(2.2rem, 10vw, 3.2rem); }
     }
+    /* -- Sub-page hero: real Hill Country bluebonnet photo -- */
     .hero-sub-page {
       background: linear-gradient(to bottom, rgba(10,8,20,.5) 0%, rgba(10,8,20,.28) 45%, rgba(5,12,3,.78) 100%), url('images/hero-background-2.jpg') center/cover no-repeat;
-      min-height: 32vh;
+      min-height: 46vh;
     }
-    .sitemap-section { padding: var(--section-pad); }
-    .sitemap-section .container { max-width: 760px; margin-inline: auto; }
-    .sitemap-group { margin-bottom: 2.5rem; }
-    .sitemap-group h2 {
-      font-family: 'Cormorant Garamond', serif; font-weight: 600; color: var(--navy);
-      font-size: 1.5rem; margin-bottom: 1rem; border-bottom: 1px solid var(--parchment-dark); padding-bottom: .6rem;
-    }
-    .sitemap-group ul { display: grid; gap: .6rem; }
-    .sitemap-group a { color: var(--text-mid); font-size: 1rem; }
-    .sitemap-group a:hover { color: var(--amber); }
+    .page-section { padding: var(--section-pad); }
+    .page-section .container { max-width: 900px; margin-inline: auto; }
+    .page-section p { color: var(--text-mid); line-height: 1.8; margin-bottom: 1rem; font-size: 1.02rem; }
+    .page-pillars { display: grid; gap: 1.75rem; margin-top: 2rem; }
+    @media (min-width: 700px) { .page-pillars { grid-template-columns: 1fr 1fr; } }
+    .page-cta-links { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--parchment-dark); font-size: .95rem; color: var(--text-light); }
+    .page-cta-links a { color: var(--amber); font-weight: 600; }
 
     /* -- Services nav dropdown (shared across every page) -- */
     .has-dropdown { position: relative; display: flex; align-items: center; }
@@ -1217,53 +1279,78 @@
   </div>
 </nav>
 
-<section class="hero hero-sub-page" id="top" aria-label="Sitemap">
+<section class="hero hero-sub-page" id="top" aria-label="Payroll Services for Small Businesses">
   <div class="hero-inner">
     <div class="hero-text">
-      <h1 class="hero-headline" style="font-size:clamp(1.8rem,4vw,2.4rem);">Sitemap</h1>
+      <span class="eyebrow">&#9733; Payroll Services &#9733;</span>
+      <h1 class="hero-headline">Payroll Services for Small Businesses</h1>
+      <p class="hero-sub">Paying your team correctly and on time, every time &mdash; without you becoming a payroll expert.</p>
+      <div class="hero-ctas">
+        <a href="index.html#contact" class="btn btn-amber">Get Your Free Consultation &#9733;</a>
+      </div>
     </div>
   </div>
 </section>
-<section class="sitemap-section" aria-label="All Pages">
+
+<section class="page-section" aria-label="One Less Thing to Worry About">
   <div class="container">
-    <div class="sitemap-group">
-      <h2>Main</h2>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About K.C.</a></li>
-        <li><a href="index.html#packages">Pricing &amp; Packages</a></li>
-        <li><a href="index.html#testimonials">Client Reviews</a></li>
-        <li><a href="index.html#contact">Free Consultation</a></li>
-      </ul>
+    <div class="center" style="margin-bottom:1.5rem;">
+      <span class="eyebrow">Payroll, Handled Right</span>
+      <h2 class="section-title">One Less Thing to Worry About</h2>
+      <div class="star-rule center-only"><span>&#10022; &#9733; &#10022;</span></div>
     </div>
-    <div class="sitemap-group">
-      <h2>Services</h2>
-      <ul>
-        <li><a href="bookkeeping.html">Monthly Bookkeeping</a></li>
-        <li><a href="payroll.html">Payroll Services</a></li>
-        <li><a href="financial-reporting.html">Financial Reporting &amp; AP/AR</a></li>
-        <li><a href="tax-filing-support.html">Sales Tax &amp; 1099 Filing Support</a></li>
-        <li><a href="service-areas.html">Service Areas</a></li>
-      </ul>
+      <p>Payroll mistakes are expensive &mdash; missed deadlines, incorrect withholdings, unhappy employees. I run payroll accurately and on schedule so it&rsquo;s one less thing on your plate.</p>
+      <p>Proudly based near Liberty Hill, TX, and serving small businesses throughout the area &mdash; plus clients nationwide, remotely.</p>
+    <div class="page-pillars">
+      <div class="pillar">
+        <div class="pillar-icon"><i data-lucide="shield-check"></i></div>
+        <div class="pillar-body">
+          <h4>Compliance Without the Headache</h4>
+          <p>Texas small businesses have real payroll compliance requirements, from tax withholdings to filing deadlines. I keep track of it so you don&rsquo;t have to become an expert in payroll law.</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon"><i data-lucide="user-check"></i></div>
+        <div class="pillar-body">
+          <h4>A Personal Touch, Not a Call Center</h4>
+          <p>When you have a payroll question, you&rsquo;re talking to me directly &mdash; not navigating a phone tree at a national payroll company. Same person, every time.</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon"><i data-lucide="clock"></i></div>
+        <div class="pillar-body">
+          <h4>On Time, Every Time</h4>
+          <p>Your team gets paid correctly and on schedule &mdash; no last-minute scrambles, no missed pay dates.</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon"><i data-lucide="map-pin"></i></div>
+        <div class="pillar-body">
+          <h4>Serving Liberty Hill and Beyond</h4>
+          <p>Already ranking well for payroll searches across Liberty Hill and the surrounding area &mdash; and available remotely nationwide.</p>
+        </div>
+      </div>
     </div>
-    <div class="sitemap-group">
-      <h2>Blog</h2>
-      <ul>
-        <li><a href="blog.html">Blog Home</a></li>
-        <li><a href="blog-signs-you-need-a-bookkeeper.html">7 Signs It's Time to Outsource Your Bookkeeping</a></li>
-        <li><a href="blog-quickbooks-vs-bookkeeper.html">QuickBooks vs. a Real Bookkeeper</a></li>
-        <li><a href="blog-bookkeeping-cost-texas.html">How Much Does a Bookkeeper Cost in Texas?</a></li>
-      </ul>
-    </div>
-    <div class="sitemap-group">
-      <h2>Legal</h2>
-      <ul>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms-of-use.html">Terms of Use</a></li>
-      </ul>
+    <div class="page-cta-links">
+      Already handling your own bookkeeping and just need payroll? Or want it all under one roof &mdash; see <a href="bookkeeping.html">monthly bookkeeping services</a> to bundle it together.
     </div>
   </div>
 </section>
+
+<section class="cta-band" aria-label="Call to action">
+  <div style="position:relative;z-index:2;">
+    <span class="script">Let&rsquo;s make payroll simple.</span>
+    <h2>Ready to Make Payroll One Less Thing to Worry About?</h2>
+    <p>Schedule your free consultation today and let&rsquo;s talk about your team&rsquo;s payroll needs.</p>
+    <a href="index.html#contact" class="btn btn-white">Schedule Your Free Consultation</a>
+    <div class="cta-contact-row">
+      <div class="cta-contact-item"><i data-lucide="phone"></i> <a href="tel:5125913169" style="color:inherit;">512-591-3169</a></div>
+      <div class="cta-contact-item"><i data-lucide="mail"></i> <a href="mailto:kc@trinitybookstx.com" style="color:inherit;">kc@trinitybookstx.com</a></div>
+      <div class="cta-contact-item"><i data-lucide="map-pin"></i> Local to Texas &middot; Remote Nationwide</div>
+    </div>
+  </div>
+</section>
+
 <footer class="site-footer" role="contentinfo">
   <div class="footer-inner">
     <div class="footer-top">

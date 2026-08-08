@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sitemap | Trinity Bookkeeping</title>
-  <meta name="description" content="A full list of every page on the Trinity Bookkeeping website." />
-  <meta name="robots" content="noindex, follow" />
-  <link rel="canonical" href="https://www.trinitybookstx.com/sitemap.html" />
+  <title>Sales Tax & 1099 Filing Support | Trinity Bookkeeping</title>
+  <meta name="description" content="Texas sales tax filing and 1099 filing support for small businesses. Deadlines tracked and forms filed correctly by K.C. Poteet, serving Liberty Hill and remotely nationwide." />
+  <meta name="keywords" content="sales tax filing service Texas, 1099 filing service, Texas sales tax deadlines, small business tax filing support" />
+  <link rel="canonical" href="https://www.trinitybookstx.com/tax-filing-support.html" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -14,6 +14,70 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.trinitybookstx.com/tax-filing-support.html" />
+  <meta property="og:title" content="Sales Tax & 1099 Filing Support | Trinity Bookkeeping" />
+  <meta property="og:description" content="Texas sales tax filing and 1099 filing support for small businesses. Deadlines tracked and forms filed correctly by K.C. Poteet, serving Liberty Hill and remotely nationwide." />
+  <meta property="og:image" content="https://trinitybookkeeping.netlify.app/TB%20-%20Social%20Preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Trinity Bookkeeping" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sales Tax & 1099 Filing Support | Trinity Bookkeeping" />
+  <meta name="twitter:description" content="Texas sales tax filing and 1099 filing support for small businesses. Deadlines tracked and forms filed correctly by K.C. Poteet, serving Liberty Hill and remotely nationwide." />
+  <meta name="twitter:image" content="https://trinitybookkeeping.netlify.app/TB%20-%20Social%20Preview.png" />
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Sales Tax and 1099 Filing Support",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Trinity Bookkeeping",
+    "telephone": "512-591-3169",
+    "email": "kc@trinitybookstx.com",
+    "url": "https://www.trinitybookstx.com"
+  },
+  "areaServed": [
+    "Liberty Hill, TX",
+    "Leander, TX",
+    "Georgetown, TX",
+    "Burnet, TX",
+    "Smithwick, TX",
+    "Texas",
+    "United States"
+  ],
+  "description": "Sales tax filing and 1099 filing support for Texas small businesses.",
+  "url": "https://www.trinitybookstx.com/tax-filing-support.html"
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.trinitybookstx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sales Tax & 1099 Filing Support",
+      "item": "https://www.trinitybookstx.com/tax-filing-support.html"
+    }
+  ]
+}
+  </script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1131,20 +1195,18 @@
       /* Hero headline — prevent overflow on smallest phones */
       .hero-headline { font-size: clamp(2.2rem, 10vw, 3.2rem); }
     }
+    /* -- Sub-page hero: real Hill Country bluebonnet photo -- */
     .hero-sub-page {
       background: linear-gradient(to bottom, rgba(10,8,20,.5) 0%, rgba(10,8,20,.28) 45%, rgba(5,12,3,.78) 100%), url('images/hero-background-2.jpg') center/cover no-repeat;
-      min-height: 32vh;
+      min-height: 46vh;
     }
-    .sitemap-section { padding: var(--section-pad); }
-    .sitemap-section .container { max-width: 760px; margin-inline: auto; }
-    .sitemap-group { margin-bottom: 2.5rem; }
-    .sitemap-group h2 {
-      font-family: 'Cormorant Garamond', serif; font-weight: 600; color: var(--navy);
-      font-size: 1.5rem; margin-bottom: 1rem; border-bottom: 1px solid var(--parchment-dark); padding-bottom: .6rem;
-    }
-    .sitemap-group ul { display: grid; gap: .6rem; }
-    .sitemap-group a { color: var(--text-mid); font-size: 1rem; }
-    .sitemap-group a:hover { color: var(--amber); }
+    .page-section { padding: var(--section-pad); }
+    .page-section .container { max-width: 900px; margin-inline: auto; }
+    .page-section p { color: var(--text-mid); line-height: 1.8; margin-bottom: 1rem; font-size: 1.02rem; }
+    .page-pillars { display: grid; gap: 1.75rem; margin-top: 2rem; }
+    @media (min-width: 700px) { .page-pillars { grid-template-columns: 1fr 1fr; } }
+    .page-cta-links { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--parchment-dark); font-size: .95rem; color: var(--text-light); }
+    .page-cta-links a { color: var(--amber); font-weight: 600; }
 
     /* -- Services nav dropdown (shared across every page) -- */
     .has-dropdown { position: relative; display: flex; align-items: center; }
@@ -1217,53 +1279,78 @@
   </div>
 </nav>
 
-<section class="hero hero-sub-page" id="top" aria-label="Sitemap">
+<section class="hero hero-sub-page" id="top" aria-label="Sales Tax &amp; 1099 Filing Support">
   <div class="hero-inner">
     <div class="hero-text">
-      <h1 class="hero-headline" style="font-size:clamp(1.8rem,4vw,2.4rem);">Sitemap</h1>
+      <span class="eyebrow">&#9733; Sales Tax &amp; 1099 Filing &#9733;</span>
+      <h1 class="hero-headline">Sales Tax &amp; 1099 Filing Support</h1>
+      <p class="hero-sub">Deadlines tracked, forms filed correctly, and one less thing to worry about at tax time.</p>
+      <div class="hero-ctas">
+        <a href="index.html#contact" class="btn btn-amber">Get Your Free Consultation &#9733;</a>
+      </div>
     </div>
   </div>
 </section>
-<section class="sitemap-section" aria-label="All Pages">
+
+<section class="page-section" aria-label="Never Miss a Filing Deadline Again">
   <div class="container">
-    <div class="sitemap-group">
-      <h2>Main</h2>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About K.C.</a></li>
-        <li><a href="index.html#packages">Pricing &amp; Packages</a></li>
-        <li><a href="index.html#testimonials">Client Reviews</a></li>
-        <li><a href="index.html#contact">Free Consultation</a></li>
-      </ul>
+    <div class="center" style="margin-bottom:1.5rem;">
+      <span class="eyebrow">Filed Right, On Time</span>
+      <h2 class="section-title">Never Miss a Filing Deadline Again</h2>
+      <div class="star-rule center-only"><span>&#10022; &#9733; &#10022;</span></div>
     </div>
-    <div class="sitemap-group">
-      <h2>Services</h2>
-      <ul>
-        <li><a href="bookkeeping.html">Monthly Bookkeeping</a></li>
-        <li><a href="payroll.html">Payroll Services</a></li>
-        <li><a href="financial-reporting.html">Financial Reporting &amp; AP/AR</a></li>
-        <li><a href="tax-filing-support.html">Sales Tax &amp; 1099 Filing Support</a></li>
-        <li><a href="service-areas.html">Service Areas</a></li>
-      </ul>
+      <p>Sales tax deadlines sneak up fast, and penalties for late or incorrect filing add up quickly. I track your filing schedule and make sure it&rsquo;s handled correctly, every period.</p>
+      <p>Sales tax and 1099 tracking works best as an ongoing habit, not a once-a-year scramble. Folding it into your regular bookkeeping keeps you ahead of every deadline.</p>
+    <div class="page-pillars">
+      <div class="pillar">
+        <div class="pillar-icon"><i data-lucide="receipt"></i></div>
+        <div class="pillar-body">
+          <h4>Texas Sales Tax, Filed on Time</h4>
+          <p>Sales tax deadlines tracked and filings handled correctly, every period &mdash; no penalties, no stress, no guessing.</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon"><i data-lucide="file-text"></i></div>
+        <div class="pillar-body">
+          <h4>1099 Filing Without the Scramble</h4>
+          <p>If you pay contractors, 1099 filing is a requirement &mdash; and an easy one to get wrong or forget. I handle the tracking throughout the year so January isn&rsquo;t a fire drill.</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon"><i data-lucide="calendar"></i></div>
+        <div class="pillar-body">
+          <h4>Year-Round Tracking</h4>
+          <p>Deadlines are tracked continuously, not just remembered in a panic each quarter.</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon"><i data-lucide="shield-check"></i></div>
+        <div class="pillar-body">
+          <h4>Peace of Mind</h4>
+          <p>One less compliance risk on your plate, handled by someone who&rsquo;s watching it all year.</p>
+        </div>
+      </div>
     </div>
-    <div class="sitemap-group">
-      <h2>Blog</h2>
-      <ul>
-        <li><a href="blog.html">Blog Home</a></li>
-        <li><a href="blog-signs-you-need-a-bookkeeper.html">7 Signs It's Time to Outsource Your Bookkeeping</a></li>
-        <li><a href="blog-quickbooks-vs-bookkeeper.html">QuickBooks vs. a Real Bookkeeper</a></li>
-        <li><a href="blog-bookkeeping-cost-texas.html">How Much Does a Bookkeeper Cost in Texas?</a></li>
-      </ul>
-    </div>
-    <div class="sitemap-group">
-      <h2>Legal</h2>
-      <ul>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms-of-use.html">Terms of Use</a></li>
-      </ul>
+    <div class="page-cta-links">
+      This pairs naturally with <a href="bookkeeping.html">monthly bookkeeping</a> and <a href="financial-reporting.html">financial reporting</a> &mdash; most clients bundle all three.
     </div>
   </div>
 </section>
+
+<section class="cta-band" aria-label="Call to action">
+  <div style="position:relative;z-index:2;">
+    <span class="script">Let&rsquo;s stay ahead of every deadline.</span>
+    <h2>Don&rsquo;t Let a Missed Filing Turn Into a Penalty</h2>
+    <p>Schedule your free consultation and let&rsquo;s get your sales tax and 1099 filings on track.</p>
+    <a href="index.html#contact" class="btn btn-white">Schedule Your Free Consultation</a>
+    <div class="cta-contact-row">
+      <div class="cta-contact-item"><i data-lucide="phone"></i> <a href="tel:5125913169" style="color:inherit;">512-591-3169</a></div>
+      <div class="cta-contact-item"><i data-lucide="mail"></i> <a href="mailto:kc@trinitybookstx.com" style="color:inherit;">kc@trinitybookstx.com</a></div>
+      <div class="cta-contact-item"><i data-lucide="map-pin"></i> Local to Texas &middot; Remote Nationwide</div>
+    </div>
+  </div>
+</section>
+
 <footer class="site-footer" role="contentinfo">
   <div class="footer-inner">
     <div class="footer-top">

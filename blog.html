@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sitemap | Trinity Bookkeeping</title>
-  <meta name="description" content="A full list of every page on the Trinity Bookkeeping website." />
-  <meta name="robots" content="noindex, follow" />
-  <link rel="canonical" href="https://www.trinitybookstx.com/sitemap.html" />
+  <title>Bookkeeping Tips & Insights for Texas Small Businesses | Trinity Bookkeeping</title>
+  <meta name="description" content="Practical bookkeeping, payroll, and tax filing guidance for Texas small business owners, from Trinity Bookkeeping's K.C. Poteet." />
+  <meta name="keywords" content="small business bookkeeping tips, Texas bookkeeping blog, bookkeeping advice for small business owners" />
+  <link rel="canonical" href="https://www.trinitybookstx.com/blog.html" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -14,6 +14,36 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.trinitybookstx.com/blog.html" />
+  <meta property="og:title" content="Trinity Bookkeeping Blog" />
+  <meta property="og:description" content="Practical bookkeeping, payroll, and tax filing guidance for Texas small business owners, from Trinity Bookkeeping's K.C. Poteet." />
+  <meta property="og:image" content="https://trinitybookkeeping.netlify.app/TB%20-%20Social%20Preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Trinity Bookkeeping" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Trinity Bookkeeping Blog" />
+  <meta name="twitter:description" content="Practical bookkeeping, payroll, and tax filing guidance for Texas small business owners, from Trinity Bookkeeping's K.C. Poteet." />
+  <meta name="twitter:image" content="https://trinitybookkeeping.netlify.app/TB%20-%20Social%20Preview.png" />
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Trinity Bookkeeping Blog",
+  "url": "https://www.trinitybookstx.com/blog.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Trinity Bookkeeping"
+  }
+}
+  </script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1131,20 +1161,53 @@
       /* Hero headline — prevent overflow on smallest phones */
       .hero-headline { font-size: clamp(2.2rem, 10vw, 3.2rem); }
     }
+    /* -- Sub-page hero (no repeated background photo asset) -- */
     .hero-sub-page {
       background: linear-gradient(to bottom, rgba(10,8,20,.5) 0%, rgba(10,8,20,.28) 45%, rgba(5,12,3,.78) 100%), url('images/hero-background-2.jpg') center/cover no-repeat;
-      min-height: 32vh;
+      min-height: 40vh;
     }
-    .sitemap-section { padding: var(--section-pad); }
-    .sitemap-section .container { max-width: 760px; margin-inline: auto; }
-    .sitemap-group { margin-bottom: 2.5rem; }
-    .sitemap-group h2 {
+    .post-byline { display: flex; align-items: center; gap: .75rem; margin-bottom: 2rem; }
+    .post-byline img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .post-byline .byline-text { font-size: .85rem; color: var(--text-light); letter-spacing: .02em; }
+    .post-byline .byline-text strong { color: var(--navy); display: block; font-size: .92rem; }
+    .page-section { padding: var(--section-pad); }
+    .page-section .container { max-width: 900px; margin-inline: auto; }
+    .page-section p { color: var(--text-mid); line-height: 1.8; margin-bottom: 1rem; font-size: 1.02rem; }
+    .page-pillars { display: grid; gap: 1.75rem; margin-top: 2rem; }
+    @media (min-width: 700px) { .page-pillars { grid-template-columns: 1fr 1fr; } }
+    .page-cta-links { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--parchment-dark); font-size: .95rem; color: var(--text-light); }
+    .page-cta-links a { color: var(--amber); font-weight: 600; }
+
+    /* -- Blog index -- */
+    .blog-grid { display: grid; gap: 2rem; margin-top: 2.5rem; }
+    @media (min-width: 780px) { .blog-grid { grid-template-columns: 1fr 1fr; } }
+    .blog-card {
+      background: var(--white); border-radius: var(--radius-lg); padding: 2rem;
+      box-shadow: var(--shadow-sm); border-top: 3px solid var(--amber);
+      display: flex; flex-direction: column; gap: .75rem;
+    }
+    .blog-card .eyebrow { margin-bottom: 0; }
+    .blog-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy); font-weight: 600; line-height: 1.25; }
+    .blog-card p { color: var(--text-light); font-size: .92rem; line-height: 1.7; margin: 0; }
+    .blog-card a.read-more { color: var(--amber); font-weight: 700; font-size: .85rem; margin-top: auto; }
+
+    /* -- Blog article body -- */
+    .article-section { padding: var(--section-pad); }
+    .article-section .container { max-width: 760px; margin-inline: auto; }
+    .post-meta { color: var(--text-light); font-size: .85rem; margin-bottom: 2rem; letter-spacing: .04em; text-transform: uppercase; }
+    .article-body h2 {
       font-family: 'Cormorant Garamond', serif; font-weight: 600; color: var(--navy);
-      font-size: 1.5rem; margin-bottom: 1rem; border-bottom: 1px solid var(--parchment-dark); padding-bottom: .6rem;
+      font-size: clamp(1.5rem, 3vw, 1.9rem); margin: 2.2rem 0 .9rem;
     }
-    .sitemap-group ul { display: grid; gap: .6rem; }
-    .sitemap-group a { color: var(--text-mid); font-size: 1rem; }
-    .sitemap-group a:hover { color: var(--amber); }
+    .article-body p { color: var(--text-mid); line-height: 1.85; margin-bottom: 1.1rem; font-size: 1.04rem; }
+    .article-body ul { margin: 0 0 1.3rem 0; }
+    .article-body li {
+      color: var(--text-mid); line-height: 1.8; font-size: 1.02rem; margin-bottom: .6rem;
+      padding-left: 1.6rem; position: relative;
+    }
+    .article-body li::before { content: '\2726'; color: var(--amber); position: absolute; left: 0; font-size: .85em; }
+    .article-body a { color: var(--amber); font-weight: 600; text-decoration: underline; text-decoration-color: rgba(200,135,42,.35); }
+    .article-body strong { color: var(--navy); }
 
     /* -- Services nav dropdown (shared across every page) -- */
     .has-dropdown { position: relative; display: flex; align-items: center; }
@@ -1217,53 +1280,55 @@
   </div>
 </nav>
 
-<section class="hero hero-sub-page" id="top" aria-label="Sitemap">
+<section class="hero hero-sub-page" id="top" aria-label="Trinity Bookkeeping Blog">
   <div class="hero-inner">
     <div class="hero-text">
-      <h1 class="hero-headline" style="font-size:clamp(1.8rem,4vw,2.4rem);">Sitemap</h1>
+      <span class="eyebrow">&#9733; Trinity Bookkeeping Blog &#9733;</span>
+      <h1 class="hero-headline">Bookkeeping Tips &amp; Insights for Texas Small Businesses</h1>
+      <p class="hero-sub">Practical, no-jargon guidance for small business owners &mdash; written by K.C. Poteet.</p>
     </div>
   </div>
 </section>
-<section class="sitemap-section" aria-label="All Pages">
-  <div class="container">
-    <div class="sitemap-group">
-      <h2>Main</h2>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About K.C.</a></li>
-        <li><a href="index.html#packages">Pricing &amp; Packages</a></li>
-        <li><a href="index.html#testimonials">Client Reviews</a></li>
-        <li><a href="index.html#contact">Free Consultation</a></li>
-      </ul>
-    </div>
-    <div class="sitemap-group">
-      <h2>Services</h2>
-      <ul>
-        <li><a href="bookkeeping.html">Monthly Bookkeeping</a></li>
-        <li><a href="payroll.html">Payroll Services</a></li>
-        <li><a href="financial-reporting.html">Financial Reporting &amp; AP/AR</a></li>
-        <li><a href="tax-filing-support.html">Sales Tax &amp; 1099 Filing Support</a></li>
-        <li><a href="service-areas.html">Service Areas</a></li>
-      </ul>
-    </div>
-    <div class="sitemap-group">
-      <h2>Blog</h2>
-      <ul>
-        <li><a href="blog.html">Blog Home</a></li>
-        <li><a href="blog-signs-you-need-a-bookkeeper.html">7 Signs It's Time to Outsource Your Bookkeeping</a></li>
-        <li><a href="blog-quickbooks-vs-bookkeeper.html">QuickBooks vs. a Real Bookkeeper</a></li>
-        <li><a href="blog-bookkeeping-cost-texas.html">How Much Does a Bookkeeper Cost in Texas?</a></li>
-      </ul>
-    </div>
-    <div class="sitemap-group">
-      <h2>Legal</h2>
-      <ul>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms-of-use.html">Terms of Use</a></li>
-      </ul>
+
+<section class="page-section" aria-label="Blog Posts">
+  <div class="container" style="max-width:1180px;">
+    <div class="blog-grid">
+      <div class="blog-card">
+        <span class="eyebrow">For Business Owners on the Fence</span>
+        <h3>7 Signs It's Time to Outsource Your Bookkeeping</h3>
+        <p>Doing your own books at 11pm? Dreading tax season every year? Here are 7 signs it&rsquo;s time to hand it off &mdash; and what that actually looks like.</p>
+        <a class="read-more" href="blog-signs-you-need-a-bookkeeper.html">Read the post &rarr;</a>
+      </div>
+      <div class="blog-card">
+        <span class="eyebrow">For the DIY Bookkeeper</span>
+        <h3>QuickBooks vs. a Real Bookkeeper: Why Software Alone Isn't Enough</h3>
+        <p>QuickBooks is a great tool &mdash; but a subscription isn&rsquo;t the same as someone actually watching your books. Here&rsquo;s the difference that matters.</p>
+        <a class="read-more" href="blog-quickbooks-vs-bookkeeper.html">Read the post &rarr;</a>
+      </div>
+      <div class="blog-card">
+        <span class="eyebrow">Pricing, Explained</span>
+        <h3>How Much Does a Bookkeeper Cost for a Small Business in Texas?</h3>
+        <p>Real market ranges for outsourced bookkeeping, what actually drives the price, and where Trinity&rsquo;s packages fall in that range.</p>
+        <a class="read-more" href="blog-bookkeeping-cost-texas.html">Read the post &rarr;</a>
+      </div>
     </div>
   </div>
 </section>
+
+<section class="cta-band" aria-label="Call to action">
+  <div style="position:relative;z-index:2;">
+    <span class="script">New posts added regularly.</span>
+    <h2>Have a Question This Didn&rsquo;t Answer?</h2>
+    <p>Schedule a free consultation and ask K.C. directly.</p>
+    <a href="index.html#contact" class="btn btn-white">Schedule Your Free Consultation</a>
+    <div class="cta-contact-row">
+      <div class="cta-contact-item"><i data-lucide="phone"></i> <a href="tel:5125913169" style="color:inherit;">512-591-3169</a></div>
+      <div class="cta-contact-item"><i data-lucide="mail"></i> <a href="mailto:kc@trinitybookstx.com" style="color:inherit;">kc@trinitybookstx.com</a></div>
+      <div class="cta-contact-item"><i data-lucide="map-pin"></i> Local to Texas &middot; Remote Nationwide</div>
+    </div>
+  </div>
+</section>
+
 <footer class="site-footer" role="contentinfo">
   <div class="footer-inner">
     <div class="footer-top">

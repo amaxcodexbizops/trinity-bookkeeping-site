@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sitemap | Trinity Bookkeeping</title>
-  <meta name="description" content="A full list of every page on the Trinity Bookkeeping website." />
-  <meta name="robots" content="noindex, follow" />
-  <link rel="canonical" href="https://www.trinitybookstx.com/sitemap.html" />
+  <title>7 Signs It's Time to Outsource Your Bookkeeping | Trinity Bookkeeping</title>
+  <meta name="description" content="If you're doing your own books at 11pm or dreading tax season every year, here are 7 signs it's time to hand your bookkeeping to a professional." />
+  <meta name="keywords" content="outsource bookkeeping, when to hire a bookkeeper, signs you need a bookkeeper, small business bookkeeping Texas" />
+  <link rel="canonical" href="https://www.trinitybookstx.com/blog-signs-you-need-a-bookkeeper.html" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -14,6 +14,69 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.trinitybookstx.com/blog-signs-you-need-a-bookkeeper.html" />
+  <meta property="og:title" content="7 Signs It's Time to Outsource Your Bookkeeping" />
+  <meta property="og:description" content="If you're doing your own books at 11pm or dreading tax season every year, here are 7 signs it's time to hand your bookkeeping to a professional." />
+  <meta property="og:image" content="https://trinitybookkeeping.netlify.app/TB%20-%20Social%20Preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Trinity Bookkeeping" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="7 Signs It's Time to Outsource Your Bookkeeping" />
+  <meta name="twitter:description" content="If you're doing your own books at 11pm or dreading tax season every year, here are 7 signs it's time to hand your bookkeeping to a professional." />
+  <meta name="twitter:image" content="https://trinitybookkeeping.netlify.app/TB%20-%20Social%20Preview.png" />
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "7 Signs It's Time to Outsource Your Bookkeeping",
+  "description": "If you're doing your own books at 11pm or dreading tax season every year, here are 7 signs it's time to hand your bookkeeping to a professional.",
+  "author": {
+    "@type": "Person",
+    "name": "K.C. Poteet"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Trinity Bookkeeping"
+  },
+  "datePublished": "2026-08-06",
+  "url": "https://www.trinitybookstx.com/blog-signs-you-need-a-bookkeeper.html"
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.trinitybookstx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.trinitybookstx.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "7 Signs It's Time to Outsource Your Bookkeeping",
+      "item": "https://www.trinitybookstx.com/blog-signs-you-need-a-bookkeeper.html"
+    }
+  ]
+}
+  </script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1131,20 +1194,53 @@
       /* Hero headline — prevent overflow on smallest phones */
       .hero-headline { font-size: clamp(2.2rem, 10vw, 3.2rem); }
     }
+    /* -- Sub-page hero (no repeated background photo asset) -- */
     .hero-sub-page {
       background: linear-gradient(to bottom, rgba(10,8,20,.5) 0%, rgba(10,8,20,.28) 45%, rgba(5,12,3,.78) 100%), url('images/hero-background-2.jpg') center/cover no-repeat;
-      min-height: 32vh;
+      min-height: 40vh;
     }
-    .sitemap-section { padding: var(--section-pad); }
-    .sitemap-section .container { max-width: 760px; margin-inline: auto; }
-    .sitemap-group { margin-bottom: 2.5rem; }
-    .sitemap-group h2 {
+    .post-byline { display: flex; align-items: center; gap: .75rem; margin-bottom: 2rem; }
+    .post-byline img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .post-byline .byline-text { font-size: .85rem; color: var(--text-light); letter-spacing: .02em; }
+    .post-byline .byline-text strong { color: var(--navy); display: block; font-size: .92rem; }
+    .page-section { padding: var(--section-pad); }
+    .page-section .container { max-width: 900px; margin-inline: auto; }
+    .page-section p { color: var(--text-mid); line-height: 1.8; margin-bottom: 1rem; font-size: 1.02rem; }
+    .page-pillars { display: grid; gap: 1.75rem; margin-top: 2rem; }
+    @media (min-width: 700px) { .page-pillars { grid-template-columns: 1fr 1fr; } }
+    .page-cta-links { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--parchment-dark); font-size: .95rem; color: var(--text-light); }
+    .page-cta-links a { color: var(--amber); font-weight: 600; }
+
+    /* -- Blog index -- */
+    .blog-grid { display: grid; gap: 2rem; margin-top: 2.5rem; }
+    @media (min-width: 780px) { .blog-grid { grid-template-columns: 1fr 1fr; } }
+    .blog-card {
+      background: var(--white); border-radius: var(--radius-lg); padding: 2rem;
+      box-shadow: var(--shadow-sm); border-top: 3px solid var(--amber);
+      display: flex; flex-direction: column; gap: .75rem;
+    }
+    .blog-card .eyebrow { margin-bottom: 0; }
+    .blog-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy); font-weight: 600; line-height: 1.25; }
+    .blog-card p { color: var(--text-light); font-size: .92rem; line-height: 1.7; margin: 0; }
+    .blog-card a.read-more { color: var(--amber); font-weight: 700; font-size: .85rem; margin-top: auto; }
+
+    /* -- Blog article body -- */
+    .article-section { padding: var(--section-pad); }
+    .article-section .container { max-width: 760px; margin-inline: auto; }
+    .post-meta { color: var(--text-light); font-size: .85rem; margin-bottom: 2rem; letter-spacing: .04em; text-transform: uppercase; }
+    .article-body h2 {
       font-family: 'Cormorant Garamond', serif; font-weight: 600; color: var(--navy);
-      font-size: 1.5rem; margin-bottom: 1rem; border-bottom: 1px solid var(--parchment-dark); padding-bottom: .6rem;
+      font-size: clamp(1.5rem, 3vw, 1.9rem); margin: 2.2rem 0 .9rem;
     }
-    .sitemap-group ul { display: grid; gap: .6rem; }
-    .sitemap-group a { color: var(--text-mid); font-size: 1rem; }
-    .sitemap-group a:hover { color: var(--amber); }
+    .article-body p { color: var(--text-mid); line-height: 1.85; margin-bottom: 1.1rem; font-size: 1.04rem; }
+    .article-body ul { margin: 0 0 1.3rem 0; }
+    .article-body li {
+      color: var(--text-mid); line-height: 1.8; font-size: 1.02rem; margin-bottom: .6rem;
+      padding-left: 1.6rem; position: relative;
+    }
+    .article-body li::before { content: '\2726'; color: var(--amber); position: absolute; left: 0; font-size: .85em; }
+    .article-body a { color: var(--amber); font-weight: 600; text-decoration: underline; text-decoration-color: rgba(200,135,42,.35); }
+    .article-body strong { color: var(--navy); }
 
     /* -- Services nav dropdown (shared across every page) -- */
     .has-dropdown { position: relative; display: flex; align-items: center; }
@@ -1217,53 +1313,65 @@
   </div>
 </nav>
 
-<section class="hero hero-sub-page" id="top" aria-label="Sitemap">
+<section class="hero hero-sub-page" id="top" aria-label="7 Signs It&rsquo;s Time to Outsource Your Bookkeeping">
   <div class="hero-inner">
     <div class="hero-text">
-      <h1 class="hero-headline" style="font-size:clamp(1.8rem,4vw,2.4rem);">Sitemap</h1>
+      <span class="eyebrow">&#9733; Trinity Bookkeeping Blog &#9733;</span>
+      <h1 class="hero-headline">7 Signs It&rsquo;s Time to Outsource Your Bookkeeping</h1>
     </div>
   </div>
 </section>
-<section class="sitemap-section" aria-label="All Pages">
+
+<section class="article-section" aria-label="7 Signs It&rsquo;s Time to Outsource Your Bookkeeping">
   <div class="container">
-    <div class="sitemap-group">
-      <h2>Main</h2>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About K.C.</a></li>
-        <li><a href="index.html#packages">Pricing &amp; Packages</a></li>
-        <li><a href="index.html#testimonials">Client Reviews</a></li>
-        <li><a href="index.html#contact">Free Consultation</a></li>
-      </ul>
+    <div class="post-byline">
+      <img src="images/kc-headshot.jpg" alt="K.C. Poteet, owner of Trinity Bookkeeping" />
+      <div class="byline-text"><strong>K.C. Poteet</strong>Trinity Bookkeeping Blog</div>
     </div>
-    <div class="sitemap-group">
-      <h2>Services</h2>
-      <ul>
-        <li><a href="bookkeeping.html">Monthly Bookkeeping</a></li>
-        <li><a href="payroll.html">Payroll Services</a></li>
-        <li><a href="financial-reporting.html">Financial Reporting &amp; AP/AR</a></li>
-        <li><a href="tax-filing-support.html">Sales Tax &amp; 1099 Filing Support</a></li>
-        <li><a href="service-areas.html">Service Areas</a></li>
-      </ul>
-    </div>
-    <div class="sitemap-group">
-      <h2>Blog</h2>
-      <ul>
-        <li><a href="blog.html">Blog Home</a></li>
-        <li><a href="blog-signs-you-need-a-bookkeeper.html">7 Signs It's Time to Outsource Your Bookkeeping</a></li>
-        <li><a href="blog-quickbooks-vs-bookkeeper.html">QuickBooks vs. a Real Bookkeeper</a></li>
-        <li><a href="blog-bookkeeping-cost-texas.html">How Much Does a Bookkeeper Cost in Texas?</a></li>
-      </ul>
-    </div>
-    <div class="sitemap-group">
-      <h2>Legal</h2>
-      <ul>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms-of-use.html">Terms of Use</a></li>
-      </ul>
+    <div class="article-body">
+      <p>If you&rsquo;re reading this at 11pm with a shoebox of receipts on your desk, you already know the answer. But here are seven specific signs that it&rsquo;s time to stop doing your own books and bring in someone who does this for a living.</p>
+
+      <h2>1. You Can&rsquo;t Remember the Last Time You Reconciled Your Bank Account</h2>
+      <p>If your bank balance and your books haven&rsquo;t been compared line-by-line in more than a month, you&rsquo;re not really running on real numbers &mdash; you&rsquo;re guessing. <a href="bookkeeping.html">Monthly reconciliation</a> is the foundation everything else depends on, and it&rsquo;s the first thing that slips when you&rsquo;re doing it yourself.</p>
+
+      <h2>2. Tax Season Feels Like a Fire Drill Every Single Year</h2>
+      <p>If you spend January and February scrambling to reconstruct a year&rsquo;s worth of transactions instead of just handing your accountant clean books, that&rsquo;s not a tax problem &mdash; it&rsquo;s a bookkeeping problem that happens to surface at tax time.</p>
+
+      <h2>3. You&rsquo;re Not Sure If You&rsquo;re Actually Profitable</h2>
+      <p>Revenue coming in doesn&rsquo;t mean much if you don&rsquo;t know what it costs you to earn it. If you couldn&rsquo;t answer &ldquo;am I profitable this month?&rdquo; with real numbers &mdash; not a gut feeling &mdash; that&rsquo;s a sign your books aren&rsquo;t telling you what you need to know.</p>
+
+      <h2>4. Invoices and Bills Are Falling Through the Cracks</h2>
+      <p>Late payments to vendors, forgotten invoices to clients, no real system for tracking what&rsquo;s owed and what you owe &mdash; this is exactly what <a href="financial-reporting.html">accounts payable and receivable support</a> is built to fix, and it&rsquo;s usually one of the first things to slide when bookkeeping gets squeezed between everything else running a business demands.</p>
+
+      <h2>5. You Dread Opening Your Accounting Software</h2>
+      <p>If logging into QuickBooks feels like a chore you keep putting off, your books are probably behind &mdash; and the longer they sit, the bigger the eventual catch-up job gets. That dread is a completely normal response to a system that&rsquo;s become a burden instead of a tool.</p>
+
+      <h2>6. You&rsquo;re Making Big Decisions Without Real Numbers</h2>
+      <p>Hiring, buying equipment, taking on a new contract &mdash; these are decisions that deserve accurate financials behind them, not a rough guess based on what&rsquo;s in the bank account today.</p>
+
+      <h2>7. Your Business Has Grown Past What a Spreadsheet Can Handle</h2>
+      <p>What worked when you were a one-person operation with a handful of transactions a month often doesn&rsquo;t hold up once you&rsquo;re managing payroll, multiple accounts, and a real volume of activity. Growth is a good problem &mdash; but it&rsquo;s still a problem your bookkeeping system needs to keep up with.</p>
+
+      <h2>What Outsourcing Actually Looks Like</h2>
+      <p>Handing off your bookkeeping doesn&rsquo;t mean losing visibility into your numbers &mdash; it means getting <em>better</em> visibility, from someone whose whole job is making sure your books are accurate every single month. That&rsquo;s the difference between bookkeeping as an afterthought and bookkeeping as a real system you can rely on.</p>
     </div>
   </div>
 </section>
+
+<section class="cta-band" aria-label="Call to action">
+  <div style="position:relative;z-index:2;">
+    <span class="script">See yourself in a few of these?</span>
+    <h2>Let&rsquo;s Take Bookkeeping Off Your Plate</h2>
+    <p>Schedule a free consultation and let&rsquo;s talk about what monthly bookkeeping would look like for your business.</p>
+    <a href="index.html#contact" class="btn btn-white">Schedule Your Free Consultation</a>
+    <div class="cta-contact-row">
+      <div class="cta-contact-item"><i data-lucide="phone"></i> <a href="tel:5125913169" style="color:inherit;">512-591-3169</a></div>
+      <div class="cta-contact-item"><i data-lucide="mail"></i> <a href="mailto:kc@trinitybookstx.com" style="color:inherit;">kc@trinitybookstx.com</a></div>
+      <div class="cta-contact-item"><i data-lucide="map-pin"></i> Local to Texas &middot; Remote Nationwide</div>
+    </div>
+  </div>
+</section>
+
 <footer class="site-footer" role="contentinfo">
   <div class="footer-inner">
     <div class="footer-top">

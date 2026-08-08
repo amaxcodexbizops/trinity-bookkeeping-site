@@ -1,0 +1,52 @@
+# Netlify config — drop this in the repo root.
+# No build step needed for this plain HTML/CSS/JS site.
+
+[build]
+  publish = "."
+
+# Canonical URL consolidation — this is the fix for the duplicate-indexing issue
+# found in Search Console (http:// and https:// / non-www versions of the
+# homepage being indexed as separate pages, splitting search credit).
+#
+# Trinity's canonical host is https://www.trinitybookstx.com/ (matches the
+# <link rel="canonical"> tag already on every page). These three rules force
+# every other variant — http, and both http/https on the bare apex domain —
+# to 301-redirect to that single canonical host.
+#
+# Also confirm in Netlify: Site settings > Domain management > "Force HTTPS"
+# is ON, and www.trinitybookstx.com (not the apex) is set as the primary
+# domain. That dashboard setting plus these redirects together close the gap.
+
+[[redirects]]
+  from = "http://trinitybookstx.com/*"
+  to = "https://www.trinitybookstx.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://trinitybookstx.com/*"
+  to = "https://www.trinitybookstx.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.trinitybookstx.com/*"
+  to = "https://www.trinitybookstx.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Netlify Forms: any <form data-netlify="true"> in your HTML is auto-detected
+# and handled without a backend. Trinity's contact form is a GoHighLevel embed
+# (already in index.html), so Netlify Forms isn't in use on this site.
